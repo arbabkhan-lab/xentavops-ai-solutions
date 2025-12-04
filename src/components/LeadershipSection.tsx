@@ -51,14 +51,15 @@ const LeadershipSection = () => {
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
-                Meet Our <span className="text-gradient">Visionary Leader</span>
+                Meet <span className="text-gradient">Arbab Khan</span>
               </h2>
+              <p className="text-primary font-semibold text-lg">Founder & CEO</p>
 
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  At the helm of Xentavops is a visionary entrepreneur dedicated to democratizing 
+                  At the helm of Xentavops is Arbab Khan, a visionary entrepreneur dedicated to democratizing 
                   AI technology for businesses worldwide. With a deep understanding of both technology 
-                  and business strategy, our leadership drives innovation at every level.
+                  and business strategy, his leadership drives innovation at every level.
                 </p>
                 <p>
                   "Our mission is simple: to empower businesses with AI tools that were once 
@@ -66,7 +67,7 @@ const LeadershipSection = () => {
                   access to transformative technology that can accelerate their growth."
                 </p>
                 <p>
-                  Under this leadership, Xentavops has grown from a small agency to a global 
+                  Under his leadership, Xentavops has grown from a small agency to a global 
                   force in AI-powered business solutions, serving clients across 50+ countries 
                   and delivering over 500 successful projects.
                 </p>
@@ -91,7 +92,7 @@ const LeadershipSection = () => {
                   <Twitter size={18} />
                 </a>
                 <a
-                  href="mailto:contact@xentavops.com"
+                  href="mailto:xentavops@gmail.com"
                   className="w-10 h-10 rounded-full bg-muted hover:bg-primary/20 flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
                 >
                   <Mail size={18} />
