@@ -101,7 +101,9 @@ const BlogsSection = () => {
           {blogs.map((blog) => (
             <a
               key={blog.id}
-              href="#"
+              href="https://xentavops.com/blogs.html"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex-shrink-0 w-80 md:w-96 group"
               style={{ scrollSnapAlign: 'start' }}
             >

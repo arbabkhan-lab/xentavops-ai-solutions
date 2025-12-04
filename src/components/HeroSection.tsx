@@ -43,17 +43,22 @@ const HeroSection = () => {
             AI Powered Operations to accelerate the business growth
           </p>
 
-          {/* Video Placeholder */}
-          <div className="relative max-w-3xl mx-auto mb-10 rounded-2xl overflow-hidden border border-border/50 shadow-2xl">
+          {/* Video */}
+          <a
+            href="https://xentavops.com/video1.mp4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative max-w-3xl mx-auto mb-10 rounded-2xl overflow-hidden border border-border/50 shadow-2xl block group"
+          >
             <div className="aspect-video bg-muted/50 flex items-center justify-center">
               <div className="text-center p-8">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
+                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <div className="w-0 h-0 border-l-[24px] border-l-primary border-t-[16px] border-t-transparent border-b-[16px] border-b-transparent ml-2" />
                 </div>
-                <p className="text-muted-foreground">Video Coming Soon</p>
+                <p className="text-muted-foreground">Watch Video</p>
               </div>
             </div>
-          </div>
+          </a>
 
           {/* CTA Button */}
           <a

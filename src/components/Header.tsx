@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,12 +33,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-button flex items-center justify-center">
-              <span className="text-xl font-bold text-primary-foreground">X</span>
-            </div>
-            <span className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-              Xentavops
-            </span>
+            <img src={logo} alt="Xentavops Logo" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}

@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Twitter, Linkedin, Youtube, Phone } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const Footer = () => {
   const socialLinks = [
@@ -19,10 +20,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl bg-gradient-button flex items-center justify-center">
-                <span className="text-xl font-bold text-primary-foreground">X</span>
-              </div>
-              <span className="text-xl font-bold text-foreground">Xentavops</span>
+              <img src={logo} alt="Xentavops Logo" className="h-12 w-auto" />
             </div>
             <p className="text-muted-foreground text-sm text-center md:text-left max-w-xs">
               AI Powered Operations to accelerate the business growth
@@ -63,7 +61,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border/30 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 Xentavops. All Rights Reserved.
+            © 2026 Xentavops. All Rights Reserved.
           </p>
         </div>
       </div>
