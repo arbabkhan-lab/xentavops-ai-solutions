@@ -16,7 +16,7 @@ const LeadershipSection = () => {
                 <img alt="CEO of Xentavops" className="w-full aspect-[4/5] object-cover" onError={e => {
                 const target = e.target as HTMLImageElement;
                 target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80";
-              }} src="/lovable-uploads/cc96c5ab-2c44-49e2-a727-3a589ebe5795.png" />
+              }} src="/lovable-uploads/0e742adb-8116-49c0-95dc-4a7af06efd98.png" />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
               </div>
 
