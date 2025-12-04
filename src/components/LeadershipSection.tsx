@@ -1,8 +1,6 @@
 import { Linkedin, Twitter, Mail } from 'lucide-react';
-
 const LeadershipSection = () => {
-  return (
-    <section className="py-24 relative overflow-hidden">
+  return <section className="py-24 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
@@ -15,15 +13,10 @@ const LeadershipSection = () => {
             {/* Image Side */}
             <div className="relative group">
               <div className="relative rounded-2xl overflow-hidden border border-border/50">
-                <img
-                  src="https://xentavops.com/ceo.jpg"
-                  alt="CEO of Xentavops"
-                  className="w-full aspect-[4/5] object-cover"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80";
-                  }}
-                />
+                <img alt="CEO of Xentavops" className="w-full aspect-[4/5] object-cover" onError={e => {
+                const target = e.target as HTMLImageElement;
+                target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80";
+              }} src="/lovable-uploads/cc96c5ab-2c44-49e2-a727-3a589ebe5795.png" />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
               </div>
 
@@ -75,26 +68,13 @@ const LeadershipSection = () => {
 
               {/* Social Links */}
               <div className="flex items-center gap-4 pt-4">
-                <a
-                  href="https://xentavops.com/socialmedia.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-muted hover:bg-primary/20 flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
-                >
+                <a href="https://xentavops.com/socialmedia.html" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted hover:bg-primary/20 flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300">
                   <Linkedin size={18} />
                 </a>
-                <a
-                  href="https://xentavops.com/socialmedia.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-muted hover:bg-primary/20 flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
-                >
+                <a href="https://xentavops.com/socialmedia.html" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted hover:bg-primary/20 flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300">
                   <Twitter size={18} />
                 </a>
-                <a
-                  href="mailto:xentavops@gmail.com"
-                  className="w-10 h-10 rounded-full bg-muted hover:bg-primary/20 flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300"
-                >
+                <a href="mailto:xentavops@gmail.com" className="w-10 h-10 rounded-full bg-muted hover:bg-primary/20 flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300">
                   <Mail size={18} />
                 </a>
               </div>
@@ -102,8 +82,6 @@ const LeadershipSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default LeadershipSection;
