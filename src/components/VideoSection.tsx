@@ -1,4 +1,5 @@
 import { Play, ArrowRight } from 'lucide-react';
+import videoTechBg from '@/assets/video-tech-bg.jpg';
 
 const VideoSection = () => {
   return (
@@ -9,9 +10,15 @@ const VideoSection = () => {
           <div className="relative group">
             <div className="relative rounded-2xl overflow-hidden border border-border/50 shadow-2xl">
               {/* Video Placeholder with Play Button */}
-              <div className="aspect-video bg-gradient-card flex items-center justify-center relative">
-                {/* Animated Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
+              <div className="aspect-video flex items-center justify-center relative">
+                {/* Tech Background Image */}
+                <img 
+                  src={videoTechBg} 
+                  alt="AI Technology Background" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                {/* Dark Overlay */}
+                <div className="absolute inset-0 bg-background/40" />
                 
                 {/* Play Button */}
                 <a
